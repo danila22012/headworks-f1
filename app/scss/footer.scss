@@ -1,0 +1,119 @@
+.footer{
+    display: flex;
+    padding:42px 36px 44px 36px;
+    &__bg{
+        margin-top: 114px;
+        background: #333333;
+    }
+    &__about{
+        max-width: 436px;
+        margin-right: 116px;
+        &--logo{
+            max-width: 120px;
+        }
+        &--text{
+            margin-top: 30px;
+            font-size: 14px;
+
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #E0E0E0;
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        margin-right: 225px;
+        &--item{
+            margin-bottom: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.01em;
+            color: #F2F2F2;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        width: 252px;
+        &--input{
+            height: 90px;
+            outline: none;
+            border: 1px solid #4F4F4F;
+            background: #333333;
+
+            margin-bottom: 10px;
+            padding: 0 12px;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0.08em;
+            text-transform: capitalize;
+            color: #F2F2F2;
+
+            
+        }
+        &--input:first-child{
+            height: 30px;
+        }
+        &--input::placeholder{
+            color: #f2f2f2;
+        }
+        &--btn{
+
+            margin-top: 4px;
+
+            padding: 5px 94px;
+            background: #4F4F4F;
+            outline: none;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            
+            cursor: pointer;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #F2F2F2;
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .footer{
+       &__list{
+           margin-right: 40px;
+       }
+       &__about{
+           margin-right: 40px;
+       }
+       &__bg{
+           margin-top: 20px;
+       }
+    }
+}
+@media screen and (max-width:550px){
+    .footer{
+        padding: 30px 16px 30px 16px;
+        flex-direction: column;
+        &__list{
+            flex-direction: row;
+            margin: 15px 0;
+            &--item{
+                margin-right: 61px;
+            }
+        }
+        &__about{
+            margin-right: 0;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            &--text{
+                margin-top: 15px;
+            }
+        }
+        &__form{
+            width: 100%;
+        }
+    }
+}   

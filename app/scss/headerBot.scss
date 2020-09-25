@@ -1,0 +1,98 @@
+.headerBot{
+    position: relative;
+    background: url('../img/hw-header-background.jpg') center/cover no-repeat;
+    &__text{
+        padding: 93px 0 140px 128px;
+        max-width: 654px;
+        &--1{
+            line-height: 32px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: 0.01em;
+            color:#333;
+        }
+        &--2{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 88px;
+            line-height: 91%;
+            color: #F50A4D;
+        }
+        &--3{
+            text-align: right;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 32px;
+            
+            color:#333;
+            letter-spacing: 0.01em;
+        }
+    }
+    &__car{
+        position: absolute;
+        right: 128px;
+        bottom: -32px;
+        width: 100%;
+        max-width: 528px; 
+        
+    }
+}
+.img{
+    width: 100%;
+}
+@media screen and (max-width: 675px){
+    .headerBot{
+
+        &__car{
+            right: 0;
+        }
+
+        &__text{
+            padding: 17px 94px 94px 26px;
+            max-width: 654px;
+            
+            &--2{
+                font-weight: bold;
+                font-size: 64px;
+                line-height: 42px;
+            }
+            &--3{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 520px){
+    .headerBot{
+        
+        height: 104px;
+        &__car{
+        max-width: 212px;
+        left: 10px;
+        bottom: -110px;
+        }
+        &__text{
+            padding: 56px 16px 0 16px;
+            &--1{
+                font-weight: 600;
+                font-size: 10px;
+                line-height: 21px;
+            }
+            &--2{
+                font-weight: bold;
+                font-size: 45px;
+                line-height: 42px;
+            }
+            &--3{
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 21px;
+            }
+        }
+    
+    }
+    
+    
+}

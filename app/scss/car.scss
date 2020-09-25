@@ -1,0 +1,114 @@
+.car{
+    margin-top: 180px;
+    &__container{
+        display: flex;
+        &--car{
+        position: relative;
+        margin-top: 20px;
+        margin-left: 128px;
+        margin-right: 24px;
+        }
+        &--text{
+            position: absolute;
+            padding: 18px 97px 18px 20px;
+            bottom: 3px;
+            left: 0;
+            max-width: 436px;
+            background: rgba(242, 242, 242, 0.5);
+
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+          
+            letter-spacing: 0.01em;
+            color: #333333;
+            
+            
+        }
+        &--stats{
+            max-width: 116px;
+            padding-top: 100px;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            /* or 133% */
+
+            letter-spacing: 0.01em;
+
+            /* Gray 2 */
+
+            color: #4F4F4F;
+        }
+    }
+
+}
+.specific__container{
+    margin-top: 47px;
+    margin-left: 128px;
+    display: flex;
+    &--text{
+        margin-right: 125px;
+        line-height: 24px;
+    
+        letter-spacing: 0.01em;
+        color: #4F4F4F;
+    }
+}
+@media screen and (max-width:768px){
+    .car{
+        margin-top: 60px;
+        &__container{
+            flex-direction: column-reverse;
+            &--car{
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+            }
+            &--stats{
+                margin-left: 15px;
+                padding-top: 0;
+                position: relative;
+                top: 40px;
+            }
+        }
+        
+    }
+    .specific__container{
+       
+        margin-left: 40px;
+        
+    }
+}
+@media screen and (max-width:500px){
+    .car{
+        &__container{
+            &--car{
+                position: relative;
+                top: -20px;
+            }
+            &--stats{
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                top: 10px;
+            }
+            &--text{
+                position: relative;
+                padding:10px 16px 10px 16px;
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+    .specific__container{
+        flex-direction: column;
+        margin: 0 16px;
+        &--text{
+            margin-right: 0;
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+    }
+}

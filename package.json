@@ -1,0 +1,23 @@
+{
+  "name": "gulp-light-starter",
+  "version": "1.0.0",
+  "description": "Simple gulp configuration for fast project start",
+  "main": "app/index.html",
+  "scripts": {
+    "start": "gulp cleanimg && gulp"
+  },
+  "author": "@anisimovv",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}

@@ -1,0 +1,150 @@
+.body{
+    max-width: 1152px;
+    margin: 0 auto;
+    font-family: Titillium Web;
+    background: #fff;
+   
+
+}
+.header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    &__bg{
+        background: #333333;
+    }
+    &__logo{
+        width: 53px;
+        &--container{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        margin: 10px 0 13px 0;
+        &--link{
+
+        margin-right: 50px;
+        
+
+        letter-spacing: 0.01em;
+        text-decoration: none;
+        color: #FAFAFA;
+
+        &:last-child{
+            margin-right: 0;
+        }
+        }
+        &--container{
+            display: flex;
+            
+            
+        }
+        &--btn{
+            margin: 10px 0 13px 0;
+            padding: 0 16px;
+            background: #F50A4D;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 30px;
+            margin-left: 40px;
+            
+            border: none;
+            outline: none;
+
+
+            color: #F2F2F2;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+
+
+        }
+    }
+    
+}
+.cross{
+    top: 4px;
+    position: absolute;
+    transform: rotate(45deg);
+    transition: 0.2s;
+    margin: 0;
+    
+    &:last-child{
+        transition: 0.2s;
+        transform: rotate(-45deg);
+    }
+}
+.barMenu{
+    
+    transition: 0.2s;
+    width: 18px;
+    height: 2px;
+    background: #F2F2F2;
+    margin-bottom: 2px;
+    
+  
+
+    &__container{
+       
+        width: 18px;
+        height: 12px;
+        margin-right: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.barMenu__container{
+    display: none;
+    flex-direction: column;
+}
+.active{
+    display: flex;
+}
+.disabled{
+    display: none;
+}
+
+.nav__adaptive{
+    
+    
+    background: #333333;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 18px 0 20px 0;
+
+    &--link{
+        letter-spacing: 0.01em;
+        text-decoration: none;
+        color: #FAFAFA;
+        margin-bottom: 17px;
+    }
+    &--container{
+        position: absolute;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 540px){
+
+    .header{
+        padding: 0 16px 0 19px;
+    }
+    .header__nav{
+       
+        display: none;
+    }
+    .barMenu__container{
+        display: flex;
+    }
+    
+}

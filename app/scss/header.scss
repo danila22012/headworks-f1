@@ -113,7 +113,8 @@
 
 .nav__adaptive{
     
-    
+    position: relative;
+    z-index: 10;
     background: #333333;
     width: 100%;
     justify-content: center;

@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const bars = document.querySelectorAll('.barMenu')
   bars.forEach(e=> console.log(e.className))
 
+  const main = document.querySelector('.main')
+  console.log(main)
+
   let state = false;
 
   btn.addEventListener('click', e =>{
@@ -19,12 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (state) {
       nav.classList.toggle('disabled')
+      main.classList.toggle('overlay')
       bars.forEach(e=>e.className = 'barMenu')
+
       state = false
       
     }
     else if(!state) {
       nav.className ='active nav__adaptive'
+      main.className = 'main overlay'
       state = true
       bars.forEach(e=>e.className = 'barMenu cross')
     }

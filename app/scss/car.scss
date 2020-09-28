@@ -1,5 +1,6 @@
 .car{
     margin-top: 180px;
+    
     &__container{
         display: flex;
         &--car{
@@ -58,6 +59,7 @@
 @media screen and (max-width:768px){
     .car{
         margin-top: 60px;
+        padding-bottom: 30px;
         &__container{
             flex-direction: column-reverse;
             &--car{

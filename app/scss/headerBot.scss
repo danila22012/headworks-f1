@@ -40,6 +40,22 @@
 .img{
     width: 100%;
 }
+
+.main{
+    position: relative;
+}
+.overlay::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color: #000000, $alpha: 0.5);
+    z-index: 5;
+}
+
+
 @media screen and (max-width: 675px){
     .headerBot{
 
